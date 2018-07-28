@@ -8,11 +8,20 @@ timezone: UTC
 url: https://hexo.io
 root: /
 permalink: news/:year/:month/:day/:title/
-archive_dir: news
+archive_dir: archives
+category_dir: categories
 code_dir: downloads/code
 new_post_name: :year-:month-:day-:title.md # File name of new posts
 post_asset_folder: true
-per_page: 0
+#per_page: 0
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
 
 theme: next
 deploy:
